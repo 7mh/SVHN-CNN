@@ -1,4 +1,4 @@
-import os
+iport os
 import time
 #from __future__ import absolute_import
 #from __future__ import print_function
@@ -21,7 +21,8 @@ import torch.optim as optim
 
 #d_pth = '/net/home/mhashmi/data/svHn/'
 
-d_pth = '/u1/h3/hashmi/public_html/data/svHn/'
+#d_pth = '/u1/h3/hashmi/public_html/data/svHn/'
+d_pth = '../data/'
 tst = 'test_32x32.mat'
 trn = 'train_32x32.mat'
 extra = 'extra_32x32.mat'
@@ -114,12 +115,12 @@ def make_data():
     print("Validation set", y_val.shape)
     print("Test set", y_test.shape)
 
-    #np.save('./npData/X_train.npy',X_gryNorm_train)
-    #np.save('./npData/y_train.npy', y_train)
-    #np.save('./npData/X_test.npy', X_gryNorm_test)
-    #np.save('./npData/y_test.npy', y_test)
-    #np.save('./npData/X_val.npy', X_val)
-    #np.save('./npData/y_val.npy', y_val)
+    #np.save('../npData/X_train.npy',X_gryNorm_train)
+    #np.save('../npData/y_train.npy', y_train)
+    #np.save('../npData/X_test.npy', X_gryNorm_test)
+    #np.save('../npData/y_test.npy', y_test)
+    #np.save('../npData/X_val.npy', X_val)
+    #np.save('../npData/y_val.npy', y_val)
 
 
     import h5py
